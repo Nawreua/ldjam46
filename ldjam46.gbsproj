@@ -2,56 +2,199 @@
     "settings": {
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 0,
-        "worldScrollY": 0,
-        "zoom": 100,
+        "worldScrollX": 2325,
+        "worldScrollY": 1086,
+        "zoom": 400,
+        "customColorsWhite": "E8F8E0",
+        "customColorsLight": "B0F088",
+        "customColorsDark": "509878",
+        "customColorsBlack": "202850",
         "startX": 9,
         "startY": 9,
         "startDirection": "down",
-        "startSceneId": "",
-        "playerSpriteSheetId": "581d34d0-9591-4e6e-a609-1d94f203b0cd"
+        "startSceneId": "7cc3856d-3d16-4181-af2e-eebca2a1c179",
+        "playerSpriteSheetId": "852d753e-0863-451b-8b89-6d9fc24f0fc1"
     },
-    "scenes": [],
+    "scenes": [
+        {
+            "name": "Scene 1",
+            "backgroundId": "e552d844-8d8a-4ae1-82c1-7004a424209b",
+            "width": 20,
+            "height": 18,
+            "collisions": [
+                252,
+                192,
+                67,
+                1,
+                100,
+                20,
+                64,
+                116,
+                0,
+                192,
+                2,
+                0,
+                40,
+                128,
+                129,
+                0,
+                0,
+                0,
+                0,
+                0,
+                7,
+                0,
+                96,
+                0,
+                240,
+                2,
+                0,
+                33,
+                0,
+                16,
+                2,
+                0,
+                33,
+                0,
+                16,
+                2,
+                0,
+                225,
+                255,
+                255,
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
+            "id": "7cc3856d-3d16-4181-af2e-eebca2a1c179",
+            "x": 710,
+            "y": 290.5,
+            "actors": [
+                {
+                    "spriteSheetId": "5e18e785-3478-4672-8bce-7ba812a798d7",
+                    "movementType": "static",
+                    "direction": "down",
+                    "moveSpeed": "1",
+                    "animSpeed": "3",
+                    "id": "5a8d05f5-5523-4ccb-b9e8-a93895e9b052",
+                    "x": 11,
+                    "y": 6,
+                    "animate": false,
+                    "frame": 1,
+                    "name": "Fire"
+                },
+                {
+                    "spriteSheetId": "b319946a-ca56-4ffb-8cb4-151c6695663c",
+                    "movementType": "static",
+                    "direction": "down",
+                    "moveSpeed": "1",
+                    "animSpeed": "3",
+                    "id": "00adfcf1-7496-477d-b991-82bea966423d",
+                    "x": 9,
+                    "y": 6,
+                    "frame": 0,
+                    "name": "Survivor"
+                },
+                {
+                    "spriteSheetId": "d428dee3-db08-4aef-88ba-19638a844b1b",
+                    "movementType": "static",
+                    "direction": "down",
+                    "moveSpeed": "1",
+                    "animSpeed": "3",
+                    "id": "59043919-d9d6-4332-92e0-93d893d488e6",
+                    "x": 15,
+                    "y": 6,
+                    "name": "Logs",
+                    "frame": 0
+                }
+            ],
+            "triggers": []
+        }
+    ],
     "_version": "1.2.0",
-    "author": "nawreua",
+    "author": "Nawreua",
     "name": "ldjam46",
     "variables": [],
     "backgrounds": [
         {
-            "id": "1e5f9d6a-bdbc-43e6-8c34-22f5bb5dea05",
-            "name": "placeholder",
+            "id": "52ec0ee9-bc38-4497-a00f-74b377139ebd",
+            "name": "basic_tileset",
+            "width": 16,
+            "height": 7,
+            "imageWidth": 128,
+            "imageHeight": 56,
+            "filename": "basic_tileset.png",
+            "_v": 1587262858474
+        },
+        {
+            "id": "e552d844-8d8a-4ae1-82c1-7004a424209b",
+            "name": "start_map",
             "width": 20,
             "height": 18,
             "imageWidth": 160,
             "imageHeight": 144,
-            "filename": "placeholder.png",
-            "_v": 1561399228204
+            "filename": "start_map.png",
+            "_v": 1587263019778
         }
     ],
     "spriteSheets": [
         {
-            "id": "11b5452b-187c-43a3-afb1-a1f4f74ffda2",
-            "name": "actor",
-            "numFrames": 3,
-            "type": "actor",
-            "filename": "actor.png",
-            "_v": 1561399228204
+            "id": "7758163c-d37e-4c52-af8a-2c32b32f3c94",
+            "name": "coconuts",
+            "numFrames": 2,
+            "type": "animated",
+            "filename": "coconuts.png",
+            "_v": 1587262858474
         },
         {
-            "id": "581d34d0-9591-4e6e-a609-1d94f203b0cd",
-            "name": "actor_animated",
+            "id": "5e18e785-3478-4672-8bce-7ba812a798d7",
+            "name": "fire",
+            "numFrames": 4,
+            "type": "animated",
+            "filename": "fire.png",
+            "_v": 1587262858474
+        },
+        {
+            "id": "d428dee3-db08-4aef-88ba-19638a844b1b",
+            "name": "logs",
+            "numFrames": 4,
+            "type": "animated",
+            "filename": "logs.png",
+            "_v": 1587262858474
+        },
+        {
+            "id": "852d753e-0863-451b-8b89-6d9fc24f0fc1",
+            "name": "main_sprite",
             "numFrames": 6,
             "type": "actor_animated",
-            "filename": "actor_animated.png",
-            "_v": 1561399228204
+            "filename": "main_sprite.png",
+            "_v": 1587262858474
         },
         {
-            "id": "daf95270-e30d-423b-9ee7-990ae29f57f6",
-            "name": "static",
+            "id": "b319946a-ca56-4ffb-8cb4-151c6695663c",
+            "name": "survivor",
+            "numFrames": 4,
+            "type": "animated",
+            "filename": "survivor.png",
+            "_v": 1587262858474
+        },
+        {
+            "id": "aa5c90df-1acd-4a50-80da-61b324ad4a15",
+            "name": "tree",
+            "numFrames": 2,
+            "type": "animated",
+            "filename": "tree.png",
+            "_v": 1587262858474
+        },
+        {
+            "id": "55596c5f-7977-4a7d-aec6-c5f3956ab2fe",
+            "name": "water",
             "numFrames": 1,
             "type": "static",
-            "filename": "static.png",
-            "_v": 1561399228204
+            "filename": "water.png",
+            "_v": 1587262858474
         }
     ],
     "music": [
@@ -59,7 +202,8 @@
             "id": "f50428ab-a084-4591-9bba-2ba10fe7b1c6",
             "name": "template",
             "filename": "template.mod",
-            "_v": 1561399228201
+            "_v": 1587262858474
         }
-    ]
+    ],
+    "customEvents": []
 }
